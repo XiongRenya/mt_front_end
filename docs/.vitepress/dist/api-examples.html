@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Runtime API Examples | mt的前端小窝</title>
+    <meta name="description" content="Just playing around with Vue and Vitepress.">
+    <meta name="generator" content="VitePress v1.0.0-rc.45">
+    <link rel="preload stylesheet" href="/assets/style.Dpy6VXOA.css" as="style">
+    
+    <script type="module" src="/assets/app.GkTY6ztl.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.Bu8hRsVA.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/framework.DyMc37k2.js">
+    <link rel="modulepreload" href="/assets/chunks/theme.xykH5i53.js">
+    <link rel="modulepreload" href="/assets/api-examples.md.C_N2rHKB.lean.js">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-5d98c3a5><!--[--><!--]--><!--[--><span tabindex="-1" data-v-0f60ec36></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-0f60ec36> Skip to content </a><!--]--><!----><header class="VPNav" data-v-5d98c3a5 data-v-ae24b3ad><div class="VPNavBar has-sidebar" data-v-ae24b3ad data-v-19c990f1><div class="wrapper" data-v-19c990f1><div class="container" data-v-19c990f1><div class="title" data-v-19c990f1><div class="VPNavBarTitle has-sidebar" data-v-19c990f1 data-v-ab179fa1><a class="title" href="/" data-v-ab179fa1><!--[--><!--]--><!--[--><img class="VPImage logo" src="/logo.png" alt data-v-8426fc1a><!--]--><span data-v-ab179fa1>mt&#39;s front-end playground</span><!--[--><!--]--></a></div></div><div class="content" data-v-19c990f1><div class="content-body" data-v-19c990f1><!--[--><!--]--><div class="VPNavBarSearch search" data-v-19c990f1><!----></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-19c990f1 data-v-7f418b0f><span id="main-nav-aria-label" class="visually-hidden" data-v-7f418b0f>Main Navigation</span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/" tabindex="0" data-v-7f418b0f data-v-42ef59de><!--[--><span data-v-42ef59de>主页</span><!--]--></a><!--]--><!--[--><a class="VPLink link vp-external-link-icon VPNavBarMenuLink" href="http://mtya.cn" target="_blank" rel="noreferrer" tabindex="0" data-v-7f418b0f data-v-42ef59de><!--[--><span data-v-42ef59de>个人简历</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/markdown-examples.html" tabindex="0" data-v-7f418b0f data-v-42ef59de><!--[--><span data-v-42ef59de>mtDesgin</span><!--]--></a><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-7f418b0f data-v-b6c34ac9><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-b6c34ac9><span class="text" data-v-b6c34ac9><!----><span data-v-b6c34ac9>mtDemos</span><span class="vpi-chevron-down text-icon" data-v-b6c34ac9></span></span></button><div class="menu" data-v-b6c34ac9><div class="VPMenu" data-v-b6c34ac9 data-v-e7ea1737><div class="items" data-v-e7ea1737><!--[--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/item-1.html" data-v-43f1e123><!--[-->Item A<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/item-2.html" data-v-43f1e123><!--[-->Item B<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/item-3.html" data-v-43f1e123><!--[-->Item C<!--]--></a></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/item-4.html" tabindex="0" data-v-7f418b0f data-v-42ef59de><!--[--><span data-v-42ef59de>mtWorks</span><!--]--></a><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-19c990f1 data-v-e6aabb21><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="Switch to dark theme" aria-checked="false" data-v-e6aabb21 data-v-d1f28634 data-v-1d5665e3><span class="check" data-v-1d5665e3><span class="icon" data-v-1d5665e3><!--[--><span class="vpi-sun sun" data-v-d1f28634></span><span class="vpi-moon moon" data-v-d1f28634></span><!--]--></span></span></button></div><!----><div class="VPFlyout VPNavBarExtra extra" data-v-19c990f1 data-v-d0bd9dde data-v-b6c34ac9><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-b6c34ac9><span class="vpi-more-horizontal icon" data-v-b6c34ac9></span></button><div class="menu" data-v-b6c34ac9><div class="VPMenu" data-v-b6c34ac9 data-v-e7ea1737><!----><!--[--><!--[--><!----><div class="group" data-v-d0bd9dde><div class="item appearance" data-v-d0bd9dde><p class="label" data-v-d0bd9dde>Appearance</p><div class="appearance-action" data-v-d0bd9dde><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="Switch to dark theme" aria-checked="false" data-v-d0bd9dde data-v-d1f28634 data-v-1d5665e3><span class="check" data-v-1d5665e3><span class="icon" data-v-1d5665e3><!--[--><span class="vpi-sun sun" data-v-d1f28634></span><span class="vpi-moon moon" data-v-d1f28634></span><!--]--></span></span></button></div></div></div><!----><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-19c990f1 data-v-e5dd9c1c><span class="container" data-v-e5dd9c1c><span class="top" data-v-e5dd9c1c></span><span class="middle" data-v-e5dd9c1c></span><span class="bottom" data-v-e5dd9c1c></span></span></button></div></div></div></div><div class="divider" data-v-19c990f1><div class="divider-line" data-v-19c990f1></div></div></div><!----></header><div class="VPLocalNav has-sidebar empty" data-v-5d98c3a5 data-v-a6f0e41e><div class="container" data-v-a6f0e41e><button class="menu" aria-expanded="false" aria-controls="VPSidebarNav" data-v-a6f0e41e><span class="vpi-align-left menu-icon" data-v-a6f0e41e></span><span class="menu-text" data-v-a6f0e41e>Menu</span></button><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-a6f0e41e data-v-d2ecc192><button data-v-d2ecc192>Return to top</button><!----></div></div></div><aside class="VPSidebar" data-v-5d98c3a5 data-v-575e6a36><div class="curtain" data-v-575e6a36></div><nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1" data-v-575e6a36><span class="visually-hidden" id="sidebar-aria-label" data-v-575e6a36> Sidebar Navigation </span><!--[--><!--]--><!--[--><div class="group" data-v-575e6a36><section class="VPSidebarItem level-0 collapsible collapsed" data-v-575e6a36 data-v-93e7e794><div class="item" role="button" tabindex="0" data-v-93e7e794><div class="indicator" data-v-93e7e794></div><h2 class="text" data-v-93e7e794>学习笔记</h2><div class="caret" role="button" aria-label="toggle section" tabindex="0" data-v-93e7e794><span class="vpi-chevron-right caret-icon" data-v-93e7e794></span></div></div><div class="items" data-v-93e7e794><!--[--><div class="VPSidebarItem level-1 is-link" data-v-93e7e794 data-v-93e7e794><div class="item" data-v-93e7e794><div class="indicator" data-v-93e7e794></div><a class="VPLink link link" href="/markdown-examples.html" data-v-93e7e794><!--[--><p class="text" data-v-93e7e794>Vue学习笔记</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-93e7e794 data-v-93e7e794><div class="item" data-v-93e7e794><div class="indicator" data-v-93e7e794></div><a class="VPLink link link" href="/study/node.html" data-v-93e7e794><!--[--><p class="text" data-v-93e7e794>Node学习笔记</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-93e7e794 data-v-93e7e794><div class="item" data-v-93e7e794><div class="indicator" data-v-93e7e794></div><a class="VPLink link link" href="/study/react.html" data-v-93e7e794><!--[--><p class="text" data-v-93e7e794>React学习笔记</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><div class="group" data-v-575e6a36><section class="VPSidebarItem level-0 has-active" data-v-575e6a36 data-v-93e7e794><!----><div class="items" data-v-93e7e794><!--[--><div class="VPSidebarItem level-1 is-link" data-v-93e7e794 data-v-93e7e794><div class="item" data-v-93e7e794><div class="indicator" data-v-93e7e794></div><a class="VPLink link link" href="/markdown-examples.html" data-v-93e7e794><!--[--><p class="text" data-v-93e7e794>Markdown Examples</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-93e7e794 data-v-93e7e794><div class="item" data-v-93e7e794><div class="indicator" data-v-93e7e794></div><a class="VPLink link link" href="/api-examples.html" data-v-93e7e794><!--[--><p class="text" data-v-93e7e794>Runtime API Examples</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><!--]--><!--[--><!--]--></nav></aside><div class="VPContent has-sidebar" id="VPContent" data-v-5d98c3a5 data-v-1428d186><div class="VPDoc has-sidebar" data-v-1428d186 data-v-39a288b8><!--[--><!--]--><div class="container" data-v-39a288b8><!----><div class="content" data-v-39a288b8><div class="content-container" data-v-39a288b8><!--[--><!--]--><main class="main" data-v-39a288b8><div style="position:relative;" class="vp-doc _api-examples" data-v-39a288b8><div><h1 id="runtime-api-examples" tabindex="-1">Runtime API Examples <a class="header-anchor" href="#runtime-api-examples" aria-label="Permalink to &quot;Runtime API Examples&quot;">​</a></h1><p>This page demonstrates usage of some of the runtime APIs provided by VitePress.</p><p>The main <code>useData()</code> API can be used to access site, theme, and page data for the current page. It works in both <code>.md</code> and <code>.vue</code> files:</p><div class="language-md line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki material-theme-palenight vp-code"><code><span class="line"><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">script</span><span style="color:#C792EA;"> setup</span><span style="color:#89DDFF;">&gt;</span></span>
+<span class="line"><span style="color:#89DDFF;font-style:italic;">import</span><span style="color:#89DDFF;"> {</span><span style="color:#BABED8;"> useData</span><span style="color:#89DDFF;"> }</span><span style="color:#89DDFF;font-style:italic;"> from</span><span style="color:#89DDFF;"> &#39;</span><span style="color:#C3E88D;">vitepress</span><span style="color:#89DDFF;">&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#C792EA;">const</span><span style="color:#89DDFF;"> {</span><span style="color:#BABED8;"> theme</span><span style="color:#89DDFF;">,</span><span style="color:#BABED8;"> page</span><span style="color:#89DDFF;">,</span><span style="color:#BABED8;"> frontmatter </span><span style="color:#89DDFF;">}</span><span style="color:#89DDFF;"> =</span><span style="color:#82AAFF;"> useData</span><span style="color:#BABED8;">()</span></span>
+<span class="line"><span style="color:#89DDFF;">&lt;/</span><span style="color:#F07178;">script</span><span style="color:#89DDFF;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">## </span><span style="color:#FFCB6B;">Results</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#89DDFF;">### </span><span style="color:#FFCB6B;">Theme Data</span></span>
+<span class="line"><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">pre</span><span style="color:#89DDFF;">&gt;{{</span><span style="color:#BABED8;"> theme </span><span style="color:#89DDFF;">}}&lt;/</span><span style="color:#F07178;">pre</span><span style="color:#89DDFF;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#BABED8;">### Page Data</span></span>
+<span class="line"><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">pre</span><span style="color:#89DDFF;">&gt;{{</span><span style="color:#BABED8;"> page </span><span style="color:#89DDFF;">}}&lt;/</span><span style="color:#F07178;">pre</span><span style="color:#89DDFF;">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#BABED8;">### Page Frontmatter</span></span>
+<span class="line"><span style="color:#89DDFF;">&lt;</span><span style="color:#F07178;">pre</span><span style="color:#89DDFF;">&gt;{{</span><span style="color:#BABED8;"> frontmatter </span><span style="color:#89DDFF;">}}&lt;/</span><span style="color:#F07178;">pre</span><span style="color:#89DDFF;">&gt;</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="results" tabindex="-1">Results <a class="header-anchor" href="#results" aria-label="Permalink to &quot;Results&quot;">​</a></h2><h3 id="theme-data" tabindex="-1">Theme Data <a class="header-anchor" href="#theme-data" aria-label="Permalink to &quot;Theme Data&quot;">​</a></h3><pre>{
+  &quot;siteTitle&quot;: &quot;mt&#39;s front-end playground&quot;,
+  &quot;logo&quot;: &quot;/logo.png&quot;,
+  &quot;nav&quot;: [
+    {
+      &quot;text&quot;: &quot;主页&quot;,
+      &quot;link&quot;: &quot;/&quot;
+    },
+    {
+      &quot;text&quot;: &quot;个人简历&quot;,
+      &quot;link&quot;: &quot;http://mtya.cn&quot;
+    },
+    {
+      &quot;text&quot;: &quot;mtDesgin&quot;,
+      &quot;link&quot;: &quot;/markdown-examples.md&quot;
+    },
+    {
+      &quot;text&quot;: &quot;mtDemos&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;Item A&quot;,
+          &quot;link&quot;: &quot;/item-1&quot;
+        },
+        {
+          &quot;text&quot;: &quot;Item B&quot;,
+          &quot;link&quot;: &quot;/item-2&quot;
+        },
+        {
+          &quot;text&quot;: &quot;Item C&quot;,
+          &quot;link&quot;: &quot;/item-3&quot;
+        }
+      ]
+    },
+    {
+      &quot;text&quot;: &quot;mtWorks&quot;,
+      &quot;link&quot;: &quot;/item-4&quot;
+    }
+  ],
+  &quot;sidebar&quot;: {
+    &quot;/&quot;: [
+      {
+        &quot;text&quot;: &quot;学习笔记&quot;,
+        &quot;collapsed&quot;: true,
+        &quot;items&quot;: [
+          {
+            &quot;text&quot;: &quot;Vue学习笔记&quot;,
+            &quot;link&quot;: &quot;/markdown-examples.md&quot;
+          },
+          {
+            &quot;text&quot;: &quot;Node学习笔记&quot;,
+            &quot;link&quot;: &quot;/study/node.md&quot;
+          },
+          {
+            &quot;text&quot;: &quot;React学习笔记&quot;,
+            &quot;link&quot;: &quot;/study/react.md&quot;
+          }
+        ]
+      },
+      {
+        &quot;text&quot;: &quot;Markdown Examples&quot;,
+        &quot;link&quot;: &quot;/markdown-examples&quot;
+      },
+      {
+        &quot;text&quot;: &quot;Runtime API Examples&quot;,
+        &quot;link&quot;: &quot;/api-examples&quot;
+      }
+    ]
+  },
+  &quot;aside&quot;: false,
+  &quot;footer&quot;: {
+    &quot;message&quot;: &quot;Released under the MIT License.&quot;,
+    &quot;copyright&quot;: &quot;Copyright © 2024 - mt&quot;
+  },
+  &quot;lastUpdated&quot;: {
+    &quot;text&quot;: &quot;Updated at&quot;,
+    &quot;formatOptions&quot;: {
+      &quot;dateStyle&quot;: &quot;full&quot;,
+      &quot;timeStyle&quot;: &quot;medium&quot;
+    }
+  },
+  &quot;docFooter&quot;: {
+    &quot;prev&quot;: &quot;上一页&quot;,
+    &quot;next&quot;: &quot;下一页&quot;
+  }
+}</pre><h3 id="page-data" tabindex="-1">Page Data <a class="header-anchor" href="#page-data" aria-label="Permalink to &quot;Page Data&quot;">​</a></h3><pre>{
+  &quot;title&quot;: &quot;Runtime API Examples&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;frontmatter&quot;: {
+    &quot;outline&quot;: &quot;deep&quot;
+  },
+  &quot;headers&quot;: [],
+  &quot;relativePath&quot;: &quot;api-examples.md&quot;,
+  &quot;filePath&quot;: &quot;api-examples.md&quot;,
+  &quot;lastUpdated&quot;: 1710141232000
+}</pre><h3 id="page-frontmatter" tabindex="-1">Page Frontmatter <a class="header-anchor" href="#page-frontmatter" aria-label="Permalink to &quot;Page Frontmatter&quot;">​</a></h3><pre>{
+  &quot;outline&quot;: &quot;deep&quot;
+}</pre><h2 id="more" tabindex="-1">More <a class="header-anchor" href="#more" aria-label="Permalink to &quot;More&quot;">​</a></h2><p>Check out the documentation for the <a href="https://vitepress.dev/reference/runtime-api#usedata" target="_blank" rel="noreferrer">full list of runtime APIs</a>.</p></div></div></main><footer class="VPDocFooter" data-v-39a288b8 data-v-09de1c0f><!--[--><!--]--><div class="edit-info" data-v-09de1c0f><!----><div class="last-updated" data-v-09de1c0f><p class="VPLastUpdated" data-v-09de1c0f data-v-7e05ebdb>Updated at: <time datetime="2024-03-11T07:13:52.000Z" data-v-7e05ebdb></time></p></div></div><nav class="prev-next" data-v-09de1c0f><div class="pager" data-v-09de1c0f><a class="VPLink link pager-link prev" href="/markdown-examples.html" data-v-09de1c0f><!--[--><span class="desc" data-v-09de1c0f>上一页</span><span class="title" data-v-09de1c0f>Markdown Examples</span><!--]--></a></div><div class="pager" data-v-09de1c0f><!----></div></nav></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter has-sidebar" data-v-5d98c3a5 data-v-e315a0ad><div class="container" data-v-e315a0ad><p class="message" data-v-e315a0ad>Released under the MIT License.</p><p class="copyright" data-v-e315a0ad>Copyright © 2024 - mt</p></div></footer><!--[--><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"resume_index.md\":\"BrWVVrLI\",\"api-examples.md\":\"C_N2rHKB\",\"index.md\":\"BUaVqUca\",\"markdown-examples.md\":\"BBNG0w8V\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"en-US\",\"dir\":\"ltr\",\"title\":\"mt的前端小窝\",\"description\":\"Just playing around with Vue and Vitepress.\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"siteTitle\":\"mt's front-end playground\",\"logo\":\"/logo.png\",\"nav\":[{\"text\":\"主页\",\"link\":\"/\"},{\"text\":\"个人简历\",\"link\":\"http://mtya.cn\"},{\"text\":\"mtDesgin\",\"link\":\"/markdown-examples.md\"},{\"text\":\"mtDemos\",\"items\":[{\"text\":\"Item A\",\"link\":\"/item-1\"},{\"text\":\"Item B\",\"link\":\"/item-2\"},{\"text\":\"Item C\",\"link\":\"/item-3\"}]},{\"text\":\"mtWorks\",\"link\":\"/item-4\"}],\"sidebar\":{\"/\":[{\"text\":\"学习笔记\",\"collapsed\":true,\"items\":[{\"text\":\"Vue学习笔记\",\"link\":\"/markdown-examples.md\"},{\"text\":\"Node学习笔记\",\"link\":\"/study/node.md\"},{\"text\":\"React学习笔记\",\"link\":\"/study/react.md\"}]},{\"text\":\"Markdown Examples\",\"link\":\"/markdown-examples\"},{\"text\":\"Runtime API Examples\",\"link\":\"/api-examples\"}]},\"aside\":false,\"footer\":{\"message\":\"Released under the MIT License.\",\"copyright\":\"Copyright © 2024 - mt\"},\"lastUpdated\":{\"text\":\"Updated at\",\"formatOptions\":{\"dateStyle\":\"full\",\"timeStyle\":\"medium\"}},\"docFooter\":{\"prev\":\"上一页\",\"next\":\"下一页\"}},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
+    
+  </body>
+</html>
