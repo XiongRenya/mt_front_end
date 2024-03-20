@@ -4,7 +4,7 @@ layout: home
 
 hero:
   # 主标题
-  name: MT's message
+  name: MT's
   #   副标题
   text:
     Use VitePress + Vue
@@ -29,7 +29,7 @@ features:
     title: 个人简历
     #  介绍
     details: MT的个人简历
-    link: 'http://mtya.cn/'
+    link: '/mt/mt.md'
   - icon: 🛠️
     title: MTDesgin
     details: 个人封装组件库
