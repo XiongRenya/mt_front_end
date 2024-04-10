@@ -4,10 +4,10 @@ layout: home
 
 hero:
   # 主标题
-  name: MT's
+  # name: MT's
   #   副标题
   text:
-    Use VitePress + Vue
+    日月无眠
     # 右边图片
   image:
     src: /logo.png

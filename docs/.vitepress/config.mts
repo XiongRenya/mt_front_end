@@ -20,8 +20,13 @@ export default defineConfig({
   },
   title: 'mt的前端小窝',
   description: 'Just playing around with Vue and Vitepress.',
+  head: [
+    // 添加图标 <link rel="shortcut icon" href="https://cdn.wostatic.cn/twemoji/13.1.0/svg/2122.svg" type="image/png">
+    ['link', { rel: 'icon', href: 'https://cdn.wostatic.cn/twemoji/13.1.0/svg/2122.svg' }]
+  ],
+
   themeConfig: {
-    siteTitle: 'one more time, one more chance',
+    siteTitle: '',
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
     nav: [
@@ -29,9 +34,9 @@ export default defineConfig({
       { text: '个人简历', link: '/mt/mt.md' },
       { text: 'mtDesgin', link: '/markdown-examples.md' },
       {
-        text: 'mtDemos',
+        text: 'mt学习笔记',
         items: [
-          { text: 'Item A', link: '/item-1' },
+          { text: 'JS学习', link: '/Js/继承.md' },
           { text: 'Item B', link: '/item-2' },
           { text: 'Item C', link: '/item-3' }
         ]
@@ -41,21 +46,25 @@ export default defineConfig({
 
     // 跳转左侧边栏
     sidebar: {
-      '/': [
+      '/mt1/': [
         {
           text: '学习笔记',
           // 开启折叠按钮
           collapsed: true,
           items: [
-            { text: 'Vue学习笔记', link: '/markdown-examples.md' },
+            { text: 'js-继承', link: '/markdown-examples.md' },
             { text: 'Node学习笔记', link: '/study/node.md' },
             { text: 'React学习笔记', link: '/study/react.md' }
           ]
-        },
-        { text: 'Markdown Examples', link: '/markdown-examples' },
-        { text: 'Runtime API Examples', link: '/api-examples' }
+        }
+        // { text: 'Markdown Examples', link: '/markdown-examples' },
+        // { text: 'Runtime API Examples', link: '/api-examples' }
       ],
-      '/mt/': []
+      '/Js/': [
+        { text: 'Js-继承', link: '/Js/继承.md' },
+        { text: 'Item B', link: '/item-2' },
+        { text: 'Item C', link: '/item-3' }
+      ]
     },
 
     // 右侧
